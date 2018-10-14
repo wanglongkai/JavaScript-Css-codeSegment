@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>边框滚动</title>
+    <style>
+    *{
+      margin:0;
+      padding: 0;
+    }
+    .box{
+      display: inline-block;
+      padding: 10px;
+      position: relative;
+    }
+    .box::before{
+      overflow: hidden;
+      content: "";
+      position: absolute;
+      left:0;
+      top:0;
+      right: 0;
+      bottom: 0;
+      border:2px dashed #cd0000;
+      animation: wlk 2.5s infinite linear;
+    }
+
+    @keyframes wlk {
+      0%,100%{
+        clip-path:inset(0 0 108px 0);
+      }
+      25%{
+        clip-path:inset(0 0 0 138px);
+      }
+      50%{
+        clip-path:inset(108px 0 0 0);
+      }
+      75%{
+        clip-path:inset(0 138px 0 0);
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./img/mylogo.PNG" alt="" width="120" height="90">
+    </div>
+  </body>
+</html>

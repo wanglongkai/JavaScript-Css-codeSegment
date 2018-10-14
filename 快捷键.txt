@@ -1,0 +1,14 @@
+1.ctrl+\  ==  显示/隐藏目录树
+2.ctrl+g  ==  跳转到指定行
+3.ctrl+shift+c  ==  复制当前文件的绝对路劲
+4.ctrl+l  ==  选取一行
+5.ctrl+t  ==  模糊查找文件
+6.ctrl+shift+k  ==  删除当前行
+7.ctrl+shift+d  == 复制一行
+8.ctrl+click  ==  增加新光标
+9.ctrl+d  ==  选取文档中和当前单词相同的下一处
+10.ctrl+f  ==  查找替换
+11.alt+ctrl+[  ==  折叠
+12.alt+ctrl+]  ==  展开
+13.alt == 显示/隐藏菜单
+14.ctr+up/down  ==  上下移动一行(交换行)
