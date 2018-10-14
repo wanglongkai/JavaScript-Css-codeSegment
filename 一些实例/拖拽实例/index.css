@@ -1,0 +1,33 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  padding: 30px;
+}
+#becopy{
+  width:300px;
+  background-color: rgb(214, 236, 142);
+  border-radius: 5px;
+  overflow: hidden;
+  float: left;
+}
+.copy li{
+  height: 30px;
+  border-radius: 10px;
+  background-color:rgb(237, 150, 36);
+  list-style: none;
+  text-align: center;
+  margin:10px;
+  cursor: pointer;
+}
+
+
+#copyed{
+  width: 300px;
+  min-height: 250px;
+  background-color: rgb(132, 204, 223);
+  float: left;
+  margin-left: 200px;
+  border-radius: 5px;
+}
