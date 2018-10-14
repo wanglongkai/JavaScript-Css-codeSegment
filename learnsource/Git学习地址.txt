@@ -1,0 +1,17 @@
+前备知识：
+1.安装git客户端
+2.配置账户和邮箱
+3.与远程账户建立SSH连接
+
+
+
+Git命令：
+git init --->初始化本地仓库
+git clone <server> --->克隆仓库到本地
+git add ./<file-name> --->文件/夹添加到本地缓存区（stage）
+git commit -m "message" --->提交改动到本地仓库HEAD
+git push origin master --->提交到远程(分支可选)
+
+
+比较完整的Git学习手册：
+https://github.com/geeeeeeeeek/git-recipes
