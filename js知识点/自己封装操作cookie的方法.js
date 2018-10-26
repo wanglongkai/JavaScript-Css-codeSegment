@@ -1,0 +1,25 @@
+//设置cookie：虽然感觉是重写了document.cookie，但其实是在现有的cookis上添加新的cookie
+function setCookie(cname,cvalue,exdays){
+  var d = new Date();
+	d.setTime(d.getTime()+(exdays*24*60*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname+"="+cvalue+";"+expires;
+}
+
+
+//获取cookie值：
+/*
+cookie整体上看是一个字符串，但其实它也是名值对的形式。你可以在控制台
+输入document.cookie看看表现形式。
+*/
+function getCookie(cname){
+	var name = cname+"=";
+	var ca = document.cookie.split(";");
+	for(var i=0;i<ca.length;i++){
+		var c = ca[i].trim();
+		if(c.indexOf(name)==0){
+			return c.substring(name.length)
+		}
+	}
+	return "";
+}
