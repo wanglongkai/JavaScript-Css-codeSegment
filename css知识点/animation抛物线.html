@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.wrap{
+			position: absolute;
+			animation:wlk-h 1s linear forwards;
+		}
+		.item{
+			width:50px;
+			height: 50px;
+			border-radius: 50%;
+			display: inline-block;
+			position: absolute;
+			top:50px;
+			left:50px;
+			background-color: red;
+			animation:wlk-v 1s cubic-bezier(.84,-0.61,.95,.6) forwards;
+		}
+
+		@keyframes wlk-h{
+			0%{
+				transform: translateX(0);
+			}
+			100%{
+				transform: translateX(200px);
+			}
+		}
+		@keyframes wlk-v{
+			0%{
+				transform: translateY(0);
+			}
+			100%{
+				transform: translateY(200px);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="item"></div>
+	</div>
+</body>
+</html>
