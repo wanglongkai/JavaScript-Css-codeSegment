@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		a{
+			background-color: red;
+			border:1px solid black;
+		}
+		a:visited{
+			background-color: green;
+			border:2px solid pink;
+		}
+	</style>
+</head>
+<body>
+	<a>测试一下</a>
+	<a href="https://www.baidu.com">牛客网</a>
+
+
+	<!-- a:visited伪类的记录：
+		0. 关于a标签的四个伪类的使用顺序是：lvha(love-hate)----:link :visited :hover :active
+		1. a:link与a的区别:a可以匹配没有href属性的a标签，a:link只能匹配有href的a标签
+		2.:visited伪类只对颜色相关的属性有效，background-color、border-color等
+		3.:visited伪类属性只能覆盖a本身有的属性，不能凭空设置（这一点很重要）
+		4.:visited伪类支持::after和before伪元素。
+		5.:visited伪类不支持半透明。
+	 -->
+</body>
+</html>
