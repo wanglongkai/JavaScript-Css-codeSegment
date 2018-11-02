@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>两端对齐</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      div{
+        text-align:justify;/*文字两端对齐，但对最后一行无效，所以用伪元素hack一下，模拟最后一行*/
+        height:20px;/*这种做法会有额外的一行高度扩展，所以div最好指定一下高度*/
+        background-color:red;
+      }
+      div::after{/*模拟最后一行*/
+        content:"";
+        display:inline-block;
+        width:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>测试文字</div>
+
+    <!-- 也有一个属性可以直接最后一行两端对齐，text-align-last:justify;不过兼容性不好 -->
+  </body>
+</html>
