@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>半透明边框</title>
+    <style>
+    .wlk{
+      width:200px;
+      height:200px;
+      background-color:red;
+      border:30px solid rgba(255,0,0,0.5);
+      background-clip:padding-box;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="wlk">半透明边框</div>
+  <!-- 在css2.1中，背景是工作在borde、padding、content三个区域的；不过在css3
+出现background-clip可以改变背景的作用区域。属性值有：border-box、padding-box、
+content-box、text(该值只有Chrome支持)。默认还是border-box -->
+  </body>
+</html>
