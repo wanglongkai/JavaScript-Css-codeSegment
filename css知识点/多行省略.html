@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .d1{
+    	background-color: red;
+
+
+	    width: 300px;/*宽度是必要的*/
+	    height: 105px;/*高度不是必要的，可以用-webkit-line-clamp属性撑开，但是有文字没充满的可能性，所以写上高度更好*/
+	    /*word-break: break-all;*/
+	   /* white-space: normal;*/
+	    text-overflow: ellipsis;
+	    overflow: hidden;   /*隐藏超出的内容*/
+	    display: -webkit-box; /* 对象作为伸缩盒子模型显示 */
+	    -webkit-box-orient: vertical; /* 设置或检索伸缩盒对象的子元素的排列方式 */
+	    -webkit-line-clamp: 5; /* 显示的行数 */
+    }
+</style>
+<body>
+	<!-- 也可以使用伪类配合绝对定位在尾部固定省略号，或者直接用图片 -->
+	<div class="d1">
+		属性规定自dfssss动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。属性规定自动换行的处理方法。
+	</div>
+</body>
+</html
