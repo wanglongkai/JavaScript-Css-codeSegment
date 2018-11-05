@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css揭秘</title>
+	<style type="text/css">
+		.wlk{
+			/*居中*/
+			position: absolute;
+			left: 50%;
+			top:50%;
+			transform: translate(-50%,-50%);
+			/*居中结束*/
+			width: 300px;
+			height: 300px;
+			background: tan;
+			/*关键代码*/
+			border-radius: 40px;
+			box-shadow: 0 0 0 20px red;/*#655*/
+			outline:30px solid #655;
+		}
+	</style>
+</head>
+<body>
+	<div class="wlk"></div>
+	<!--
+		border-radius产生圆角，使用box-shadow产生没有偏移量、没有模糊值的阴影，再使用描边（outline）在形成直角。所以这个效果其实是一种hack效果。
+
+
+		知识点：
+		1.outline不会像border一样受border-radius影响。
+		2.精确box-shadow阴影宽度值和outline宽度值，即可实现效果
+	-->
+</body>
+</html>
