@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css揭秘</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.test{
+			width:300px;
+			height: 300px;
+			border:20px solid rgba(0,0,0,0.2);
+			padding:30px;
+			background: url(./img/wlk.JPG) no-repeat red;
+			background-origin: content-box;
+			background-clip: content-box;
+			background-position: right 30px bottom 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="test"></div>
+
+
+	<!-- background-origin:
+		1.该属性是设置背景图所在盒子。其属性值可以是：padding-box,border-box,content-box。默认值是padding-box。
+		2.特别注意一下，该属性只对背景图有效，对背景色(background-color)无效。
+		3.background-origin与background-clip的区别是：前者只对背景图有效，后者对背景色也有效。后者在Chrome中还有一个text属性值。
+	 -->
+
+	 <!-- background-position:
+		1.设置背景如的位置，属性值可以是关键字，百分比，距参照边距离
+		2.该属性的参考位置与background-origin的属性值是一直的，所以默认是参照padding-box。
+	 -->
+</body>
+</html>
