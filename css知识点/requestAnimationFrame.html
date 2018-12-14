@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>requestAnimationFrame动画</title>
+    <style>
+      #myDiv{
+        background-color: lightblue;
+        height: 20px;
+        height: 20px;
+        width: 0;
+      }
+    </style>
+</head>
+<body>
+
+    <div id="myDiv">0%</div>
+    <button id="btn">run</button>
+
+<script>
+    var div = document.getElementById("myDiv");
+    var btn = document.getElementById("btn");
+    var timer;
+    btn.onclick = function(){
+        div.style.width = 0;
+        cancelAnimationFrame(timer);
+        timer = requestAnimationFrame(function fn(timestemp){
+            if(parseInt(div.style.width)<500){
+                div.style.width = parseInt(div.style.width)+5+"px";
+                div.innerHTML = parseInt(div.style.width)/5+"%";
+                timer = requestAnimationFrame(fn);
+            }else{
+                cancelAnimationFrame(timer);
+            }
+        })
+    }
+</script>
+<!-- 
+
+    requestAnimationFrame是window对象下的一个函数，它接受一个回调函数作为参数，
+    这个回调函数的参数是requestAnimationFrame函数给它的一个表示当前回调函数执行的时间戳。
+
+ -->
+
+</body>
+</html>
