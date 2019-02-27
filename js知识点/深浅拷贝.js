@@ -7,7 +7,7 @@ var new_obj = JSON.parse(JSON.stringify(obj));
 var shallowCopy = function(obj){
   //不拷贝基本类型
   if(typeof obj !== 'object'){
-    returnp;
+    return;
   }
   var new_obj = obj instanceof Array ? []:{};
   for(var key in obj){
